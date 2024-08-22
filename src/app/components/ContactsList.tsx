@@ -8,9 +8,9 @@ const ContactsList = () => {
     }
 
     return (
-        <ul className="flex items-center justify-around">
+        <ul className="flex items-center justify-around contacts_list">
             {contacts_info.map((el) => (
-                <li className="flex items-center" key={el.id}>
+                <li className="flex items-center contact_item" key={el.id}>
                     <Image
                         className="mr-3"
                         src={el.src}

@@ -11,14 +11,14 @@ export default function Home() {
     return (
         <>
             <Wrapper>
-            <Header />
+                <Header />
                 <main className="flex justify-center flex-col">
-                    <section className=" mt-40 flex items-center justify-around">
-                        <div className=" flex flex-col">
-                            <h1 className="text-8xl mb-3 max-w-xl -ml-2">
+                    <section className=" mt-40 flex items-center justify-around main">
+                        <div className=" flex flex-col text-info">
+                            <h1 className="text-8xl mb-3 max-w-xl -ml-2 title">
                                 Frontend Developer
                             </h1>
-                            <p className=" max-w-xl text-slate-500 ">
+                            <p className=" max-w-xl text-slate-500 description">
                                 Hello, I am Senya! Lorem ipsum dolor, sit amet
                                 consectetur adipisicing elit. Ut, quidem quae.
                                 Officia expedita quo totam? Dignissimos
@@ -29,7 +29,7 @@ export default function Home() {
                         </div>
                         <div>
                             <Image
-                                className="rounded-3xl"
+                                className="rounded-3xl img_author"
                                 alt="author"
                                 src="/img/author.PNG"
                                 width={350}
@@ -37,8 +37,8 @@ export default function Home() {
                             />
                         </div>
                     </section>
-                    <section className="flex items-center mt-16 justify-around ">
-                        <h2 className="text-xl font-extrabold">My Stack</h2>
+                    <section className="flex items-center mt-16 justify-around section_stack ">
+                        <h2 className="text-xl font-extrabold title_stack">My Stack</h2>
                         <StackList />
                     </section>
                     <About />
@@ -46,7 +46,6 @@ export default function Home() {
                     <Contacts />
                 </main>
             </Wrapper>
-
             <Footer />
         </>
     )

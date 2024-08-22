@@ -4,9 +4,9 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className='flex mt-60 mb-10 items-center justify-around'>
-        <div >
-            <Image className='rounded-3xl' src='https://www.notik.ru/content/img/1590125588_03-laptop-for-coding.jpg' alt='about_me' width={480} height={320} />
+    <section className='flex mt-60 mb-10 items-center justify-around about_section'>
+        <div className='img_container'>
+            <Image className='rounded-3xl img_about' src='https://www.notik.ru/content/img/1590125588_03-laptop-for-coding.jpg' alt='about_me' width={480} height={320} />
         </div>
         <div className='max-w-lg'>
             <h4 id='about' className='section_title mb-1'>About me</h4>
